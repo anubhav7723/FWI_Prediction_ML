@@ -4,8 +4,8 @@ import numpy as np
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 
-app = Flask(__name__)
-
+application = Flask(__name__)
+app=application
 ## import ridge regressor model and standard scaler pickle
 
 ridge_model=pickle.load(open(r'C:\Users\anubh\OneDrive\Documents\Coding\DS-Python\Flask-webapp\models\ridge_model_train.pkl','rb'))
